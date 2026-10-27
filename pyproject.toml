@@ -1,0 +1,30 @@
+[project]
+name = "wind-forecast-replay"
+version = "1.0.0"
+description = "Day-ahead wind forecast decision replay and accuracy review (Elexon WINDFOR vs FUELHH)"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115,<1",
+    "pydantic>=2.7,<3",
+    "tzdata>=2024.1",
+]
+
+# Vercel: single Python function serving the API and the built React app.
+[tool.vercel]
+entrypoint = "backend.app.main:app"
+
+[tool.vercel.fastapi.static]
+cdn = true      # keep CDN promotion for the mounted frontend even though a logging middleware is present
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+src = ["backend", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+pythonpath = ["."]
+addopts = "-q"

@@ -1,0 +1,21 @@
+{
+  "source": "Elexon Insights Solution (BMRS) public API",
+  "files": {
+    "windfor": {
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/WINDFOR/stream?publishDateTimeFrom=2025-12-30T00:00Z&publishDateTimeTo=2026-02-02T00:00Z",
+      "fetched_at_utc": "2026-10-26T21:59:31+00:00",
+      "bytes": 2237197,
+      "sha256": "8423e6674ad9577117f1909751fcab4064283222b02ce0ba7ef895cf81a93b61",
+      "rows": 19856,
+      "file": "windfor.json"
+    },
+    "fuelhh_wind": {
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream?settlementDateFrom=2026-01-01&settlementDateTo=2026-02-01&fuelType=WIND",
+      "fetched_at_utc": "2026-10-26T21:59:33+00:00",
+      "bytes": 278650,
+      "sha256": "d156607d6cfcaa4b48767fa8dd821867204466002b8bdc8bffddf8848b54e526",
+      "rows": 1536,
+      "file": "fuelhh_wind.json"
+    }
+  }
+}
