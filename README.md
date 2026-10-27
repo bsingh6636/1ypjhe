@@ -2,7 +2,7 @@
 
 A pilot web app for a GB utility's day-ahead purchasing desk. It reconstructs the national wind generation forecast that was available at the purchase cutoff for every decision day in January 2026, and quantifies how accurate those forecasts were against metered actuals.
 
-- **Live app:** _LIVE_URL_PLACEHOLDER_
+- **Live app:** https://1ypjhe.vercel.app
 - **Data:** Elexon Insights API only: `WINDFOR` (forecast vintages) and `FUELHH` with `fuelType=WIND` (actuals). Contains BMRS data © Elexon Limited copyright and database right 2026.
 - **Stack:** React 18 + TypeScript + Vite + TanStack Query + Recharts; Python 3.12 + FastAPI + Pydantic; SQLite snapshot; Docker; GitHub Actions; Vercel.
 
